@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#taskContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 2000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  background-color: #81aae7;
+  color: white;
+  margin: 0;
+  padding: 15px;
+}
+
+#taskForm {
+  padding: 20px;
+  width: 600px;
+}
+
+#taskForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#taskForm input,
+#taskForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  background-color: #81aae7;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0e54bd;
+}
+
+#taskList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+.deleteButton {
+  width: 100%;
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.deleteButton:hover {
+  background-color: #e60000;
+}
+.formulario {
+    width: 600px; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+

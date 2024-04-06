@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignación de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="taskContainer">
+    <h2>Asignación de Tareas</h2>
+    <div class="formulario">
+    <form id="taskForm">
+
+        
+
+      <label for="fechaTurnos">Fecha Turnos:</label>
+      <input type="date" id="fechaTurnos" name="fechaTurnos" required>
+
+      <label for="remite">Remite:</label>
+      <input type="text" id="remite" name="remite" required>
+
+      <label for="claveRF">Clave RF:</label>
+      <input type="text" id="claveRF" name="claveRF" required>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+
+      <label for="subdireccionNo">Subdirección No.:</label>
+      <input type="text" id="subdireccionNo" name="subdireccionNo" required>
+
+      <label for="memo">MEMO:</label>
+      <input type="text" id="memo" name="memo" required>
+
+      <label for="area">Área:</label>
+      <input type="text" id="area" name="area" required>
+
+      <label for="firma">Firma:</label>
+      <input type="text" id="firma" name="firma" required>
+
+      <label for="asuntoRespuesta">Asunto:</label>
+      <input type="text" id="asuntoRespuesta" name="asuntoRespuesta" required>
+
+      <label for="atendio">Atendio:</label>
+      <input type="text" id="atendio" name="atendio" required>
+
+      <label for="observaciones">Observaciones:</label>
+      <textarea id="observaciones" name="observaciones" rows="4" required></textarea>
+
+
+    </form>
+  </div>
+    <button type="button" onclick="assignTask()">Asignar Tarea</button>
+    <button onclick="exportToExcel()">Descargar Excel</button>
+
+    <button onclick="viewAssignedTasks()">Ver Tareas Asignadas</button>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
